@@ -10,7 +10,17 @@ class Main {
     try {
 
       // create a new file with name specified
-   
+      // by the file object
+      boolean value = file.createNewFile();
+      if (value) {
+        System.out.println("New Java File is created.");
+      }
+      else {
+        System.out.println("The file already exists.");
+      }
+    }
+    catch(Exception e) {
+      e.getStackTrace();
     }
   }
 }
